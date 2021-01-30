@@ -50,19 +50,19 @@ class color_log:
         self.environ = name_environ
     def error(self, message):
        
-        print("%s [ERROR] %s: %s %s"% (FAIL, self.environ, message, ENDC))
+        print(f"{FAIL} [ERROR]{ENDC}{self.eviron}:  {message}")
     def info(self, message):
        
-        print("%s [INFO] %s: %s %s"% (OKBLUE, self.environ, message, ENDC))
+        print(f"{OKBLUE} [ERROR]{ENDC}{self.eviron}:  {message}")
     def warning(self, message):
        
-        print("%s [WARNING] %s: %s %s"% (WARNING,  self.environ, message, ENDC))
+        print(f"{WARNING} [WARNING]{ENDC}{self.eviron}:  {message}")
     def valid(self, message):
     
-        print("%s [VALID] %s: %s %s"% (OKGREEN,  self.environ, message, ENDC))
+        print(f"{OKGREEN} [VALID]{ENDC}{self.eviron}:  {message}")
     def ask(self, message):
      
-        return input("%s[VALID] %s: %s %s"% (OKGREEN,  self.environ, message, ENDC))
+        return input(f"{OKBLUE} [QUESTION]{ENDC}{self.eviron}:  {message}")
     
 class sign_log:
     """ View advanced logs """
